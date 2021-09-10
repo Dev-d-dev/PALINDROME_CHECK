@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    min-height:100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background: #6790ff;
+    padding: 20px;
+    .general{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 90%;
+        margin: 20px;
+        //GLASSMORPHISM
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        //INPUT-CONTAINER
+    .input-container{
+        max-width: 90%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        //BOTH INPUTS
+        input[type=text], input[type=button]{
+            max-height: 100%;
+            font-size: 2rem;
+            padding: 5px;
+            border-radius: 10px;
+            border: none;
+            font-family: monospace;
+        }
+        input[type=button]{
+            background: #777;
+            color: #ddd;
+            &:hover{
+                color: #fff;
+                background: #555;
+            }
+        }
+        input[type=text]{
+            max-width: 80%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+
+    //RESULT-CONTAINER
+    .result-container{
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+
+        font-family: monospace;
+        font-size: 2rem;
+        color: #ddd;
+    }
+    }
+    
+
+    //INFO
+    .info{
+        width: 50%;
+        padding: 20px;
+
+        font-family: monospace;
+        font-size: 1rem;
+        color: #ddd;
+        //GLASSMORPHISM
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+    }
+}
+
