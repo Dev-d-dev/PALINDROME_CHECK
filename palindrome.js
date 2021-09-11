@@ -3,7 +3,7 @@ const btn = document.getElementById('mybutton')
 let result = document.getElementById('result')
 
 btn.addEventListener('click', palindrome)
-
+input.addEventListener('keyup', enterkey)
 
 function palindrome() {
     let str = input.value
@@ -19,4 +19,11 @@ function palindrome() {
         result.innerText = `${str} is Not a Palindrome!`
     }
     input.value = ""
+    input.focus()
+  }
+
+  function enterkey(e){
+      if(e.keyCode === 13){
+          palindrome()
+      }
   }
